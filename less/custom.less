@@ -1,0 +1,387 @@
+@charset "utf-8";
+
+@import "variables.less";
+
+@global-width: 1140px;
+@bg-light: #fafafa;
+@nice-green: #00B58A;
+@text-color: #34495e;
+
+
+/* 
+ * 全局样式 
+ */
+body {font-size: 14px; color: @text-color;}
+
+.container {
+  width: @global-width;
+}
+
+.clear {
+  clear: both;
+  float: none;
+  height: 0;
+  overflow: hidden;
+}
+.left {
+  padding-left: 0;
+  margin-left: 0;
+}
+.right {
+  float: right;
+  padding-right: 0;
+  margin-right: 0;
+}
+.dk { background-color: @bg-light;}
+
+.icon {
+  color: orange;
+  padding-left: 5px;
+}
+
+/*
+ * 首页样式
+ */
+
+/* 导航条 */
+
+.navbar {
+  background-color: @bg-light;
+  border-top: 3px solid @nice-green;
+  min-width: @global-width;
+}
+.navbar-header {
+  width: 300px;
+}
+.navbar-brand, .navbar-brand:hover, .navbar-brand:visited {
+  font-family: ZhunYuan;
+  font-size: 36px;
+  font-weight: 400;
+  color: @nice-green;
+  height: 71px;
+  line-height: 35px;
+
+    .egbrand {
+      font-family: arial;
+      font-size: 24px;
+    }
+}
+
+.navbar-nav>li>a {
+  font-size: 20px;
+  font-weight: 400;
+  color: @gray-light2;
+  line-height: 35px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 40px;
+}
+.navbar-nav>li>a:hover, .navbar-nav>.active>a, .navbar-nav>.active>a:hover {
+  color: @text-color;
+  border-bottom: 3px solid @nice-green;
+  background-color: transparent;
+}
+
+
+/* 登录 */
+.login-box {
+  background-color: @nice-green;
+
+  a {
+    color: @white;
+    padding: 0 25px;
+    margin: 10px 0;
+  }
+
+  .login-btn {
+    border-right: 1px solid @white;
+  }
+}
+
+
+/* 主体 */
+.main {
+  padding-top: 30px;
+}
+
+
+/* 侧边栏 */
+.catalog {
+  background-color: @bg-light;
+  padding-bottom: 50px;
+  padding-right: 0;
+  width: 260px;
+  color: @text-color;
+
+    h2 {
+      font-size: 24px;
+      text-align: left;
+      height: 50px;
+      line-height: 50px;
+    }
+
+    h3 {
+      font-size: 15px;
+      text-align: left;
+      height: 30px;
+      line-height: 30px;
+    }
+
+    ul {
+      float: left;
+      padding-left: 0;
+    
+        li {
+          float: left;
+          height: 35px;
+          line-height: 35px;
+          width: 60px;
+          overflow: hidden;
+          position: relative;
+          list-style: none;
+          font-size: 14px;
+
+            a {
+              color: @text-color;
+            }
+
+            a:hover {
+              color: @nice-green;
+            }
+        }
+
+    }
+}
+
+/* 主要内容 */
+.mainContent {
+  width: 850px;
+  padding-left: 50px;
+  padding-right: 0;
+
+    .input-group-lg>.form-control, .input-group-lg>.input-group-btn>.btn {
+      height: 55px;
+    }
+
+    .btn-green {
+      color: #fff;
+      background-color: @nice-green;
+      border: @nice-green;
+      width: 130px;
+
+      &:hover, &:focus {
+        background-color: @nice-green - #001100;
+      }
+    }
+
+    .btn-border-green {
+      border: 2px solid @nice-green;
+      color: @text-color;
+    }
+
+    .banner {
+      height: 220px;
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+  
+}
+
+
+/*家教列表*/
+.tList {
+  margin:50px 0;
+  margin-top: 60px;
+
+    .h3 {
+      font-size: 18px;
+      height: 43px;
+      line-height: 40px;
+      background-color: #f6f6f6;
+
+        span {
+          padding-left: 25px;
+          padding-right: 25px;
+          color: @gray-light2;
+        }
+
+        .cur {
+          background-color: @body-bg;
+          border-top: 3px solid @nice-green;
+          display: inline-block;
+          height: 43px;
+          line-height: 40px;
+        }
+
+    }
+
+    .tInfo {
+      margin: 10px 0;
+      padding:20px;
+
+        img {
+          border: 1px solid @gray-lighter;
+          border-bottom: none;
+        }
+
+        .renzheng {
+          display: block;
+          width: 100px;
+          padding:5px;
+          text-align: center;
+          border: 1px solid @gray-lighter;
+        }
+
+        .tInfoTitle {
+          margin:10px 0 20px 5px;
+
+            .h4 {font-size: 18px;}
+
+            a { color: @text-color; text-decoration: underline;}
+
+            a:hover { color: @nice-green; text-decoration: none;}
+
+            .tTitle {
+              color: @gray-light2;
+              padding-left: 15px;
+
+            }
+
+        }
+
+        .tInfoRow {
+          margin:5px 0 12px 5px;
+
+            .tTitle2 {
+              color: @gray-light2;
+              padding-right: 5px;
+            }
+
+            .tContent {
+              padding-right: 15px;
+            }
+
+            .publishTime {
+              color: @gray-light2;
+              font-size: 10px;
+
+              .fui-time {
+                margin-right: 5px;
+              }
+            }
+
+        }
+    }
+
+}
+
+.btn-more {
+  margin-top: 20px;
+}
+
+
+/*回到顶部*/
+.back-to-top {
+  position: fixed;
+  right: 2%;
+  bottom: 35px;
+  background: url(../images/backtotop.png) top;
+  width: 36px;
+  height: 65px;
+  cursor: pointer;
+}
+.back-to-top:hover {
+  background: url(../images/backtotop.png) bottom;
+}
+
+.footer{padding-top:40px;padding-bottom:40px;margin-top:100px;color:@text-color;text-align:center;border-top:1px solid #e5e5e5}
+.footer-links{padding-left:0;margin-top:20px}
+.footer-links li{display:inline;padding:0 2px}
+.footer-links li:first-child{padding-left:0}
+
+
+
+
+/*
+登录注册页样式
+*/
+/*居中*/
+.login {
+  padding: 0;
+
+    .container { 
+      text-align: center;
+      margin: 100px auto 10px;
+      color: @text-color;
+
+        h3 {
+          color: @text-color;
+          font-size: 24px;
+          margin-top: 20px;
+          margin-bottom: 10px;
+          font-weight: 500;
+          line-height: 1.1;
+        }
+
+        .form-controls {
+          max-width: 330px;
+          /*padding: 15px;*/
+          margin: 15px auto;
+        }
+
+        .form-group>input, button {
+          width: 327px;
+          height: 54px;
+        }
+    }
+
+    /*忘记密码*/
+    .forgotpwd {
+      color: #bbb;
+      text-decoration: underline;
+    }
+    /*没有账户？马上注册*/
+    .tosignup {
+      padding-top: 10px;
+      font-size: 14px;
+    }
+    .tosignup>a {
+      text-decoration: underline;
+      font-size: 1.1em;
+    }
+
+    /*错误提示*/
+    .alert { 
+      padding-top: 8px;
+      padding-bottom: 8px;
+      margin-bottom: 8px;
+    }
+
+}
+
+
+
+
+/*找家教*/
+.search-teacher {
+  .catalog {
+    li {
+      width: 250px;
+      padding-left: 20px;
+    }
+  }
+
+  .input-group .form-control {
+    margin-left: 3px;
+  }
+
+
+
+
+}
+
+
+
+
+
+

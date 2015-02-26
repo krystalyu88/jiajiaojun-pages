@@ -1,0 +1,308 @@
+@charset "utf-8";
+
+@nice: #00B58A;
+
+/* 
+ * 全局样式 
+ */
+.container {
+  width: 1140px;
+}
+
+.clear {
+  clear: both;
+  float: none;
+  height: 0;
+  overflow: hidden;
+}
+.left {
+  padding-left: 0;
+  margin-left: 0;
+}
+.right {
+  float: right;
+  padding-right: 0;
+  margin-right: 0;
+}
+.dk { background-color: #fafafa;}
+/*绿色按钮*/
+.btn-green {
+  color: #fff;
+  background-color: @nice;
+  width: 130px;
+
+}
+.btn-green:hover {
+  color: #fff;
+}
+
+.label { border-radius: 15px;}
+
+/*
+ * 首页样式
+ */
+
+/* 导航条 */
+.nav {
+  padding-left: 0;
+  margin-left: 180px;
+}
+.navbar {
+  background-color: #fafafa;
+  border-top: 3px solid @nice-green;
+}
+.navbar-brand, .navbar-brand:hover, .navbar-brand:visited {
+  height: 71px;
+  font-family: ZhunYuan;
+  font-size: 36px;
+  color: @nice-green;
+  line-height: 35px;
+}
+
+.navbar-nav>li>a {
+  font-size: 20px;
+  color: #949494;
+  line-height: 35px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 40px;
+}
+.navbar-nav>li>a:hover, .navbar-nav>.active>a, .navbar-nav>.active>a:hover {
+  color: #333;
+  border-bottom: 3px solid @nice-green;
+  background-color: transparent;
+}
+
+
+/* 登录 */
+.login-box {
+  background-color: @nice-green;
+}
+
+.login-box a {
+  color: #fff;
+  padding: 0 25px;
+  margin: 10px 0;
+}
+
+.login-box .login-btn {
+  border-right: 1px solid #fff;
+}
+
+/* 主体 */
+.main {
+  padding-top: 30px;
+}
+
+
+/* 侧边栏 */
+.catalog {
+  background-color: #fafafa;
+  padding-bottom: 50px;
+  padding-right: 0;
+  width: 260px;
+}
+
+.catalog h2 {
+  font-size: 24px;
+  text-align: left;
+  height: 50px;
+  line-height: 50px;
+}
+
+.catalog h3 {
+  font-size: 15px;
+  text-align: left;
+  height: 30px;
+  line-height: 30px;
+}
+
+.catalog ul {
+  float: left;
+  padding-left: 0;
+}
+
+.catalog ul li {
+  float: left;
+  height: 35px;
+  line-height: 35px;
+  width: 60px;
+  overflow: hidden;
+  position: relative;
+  list-style: none;
+  font-size: 14px;
+}
+
+.catalog ul li a {
+  color: #555;
+}
+
+.catalog ul li a:hover {
+  color: @nice-green;
+}
+
+
+/* 主要内容 */
+.mainContent {
+  padding-left: 50px;
+  padding-right: 0;
+  width: 850px;
+}
+
+.mainContent .input-group-lg>.form-control, .mainContent .input-group-lg>.input-group-btn>.btn {
+  height: 55px;
+}
+
+.mainContent .banner {
+  height: 220px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background-color: #f0f0f0;
+}
+
+/*家教列表*/
+.tList {
+  margin:50px 0;
+  margin-top: 60px;
+}
+
+.tList .h3 {
+  font-size: 18px;
+  font-weight: 400;
+  height: 43px;
+  line-height: 40px;
+  background-color: #f6f6f6;
+}
+
+.tList .h3 span {
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #A1A1A1;
+}
+
+.tList .h3 .cur {
+  background-color: #fff;
+  border-top: 3px solid @nice-green;
+  display: inline-block;
+  height: 43px;
+  line-height: 40px;
+}
+
+.tList .tInfo {
+  margin: 10px 0;
+  padding:20px;
+}
+
+.tInfo .label {
+  display: block;
+  width: 100px;
+  padding:5px;
+  margin-top: 5px;
+}
+
+.tInfoTitle {
+  margin:10px 0 20px 5px;
+}
+
+.tInfoTitle a { color: #333; text-decoration: underline;}
+.tInfoTitle a:hover { color: @nice-green; text-decoration: none;}
+
+.tInfoRow {
+  margin:5px 0 12px 5px;
+}
+
+.tTitle {
+  color: #868686;
+  padding-left: 15px;
+
+}
+
+.tInfoRow .tTitle2 {
+  color: #868686;
+  padding-right: 5px;
+}
+
+.tInfoRow .tContent {
+  padding-right: 15px;
+}
+
+.publishTime {
+  color: #868686;
+  font-size: 10px;
+}
+
+.btn-more {
+  margin-top: 20px;
+}
+
+
+/*回到顶部*/
+.back-to-top {
+    position: fixed;
+    right: 2%;
+    bottom: 35px;
+    text-decoration: none;
+    color: #EEEEEE;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+    border-radius: 3px;
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+}
+
+.footer{padding-top:40px;padding-bottom:40px;margin-top:100px;color:#767676;text-align:center;border-top:1px solid #e5e5e5}
+.footer-links{padding-left:0;margin-top:20px}
+.footer-links li{display:inline;padding:0 2px}
+.footer-links li:first-child{padding-left:0}
+
+
+
+
+
+/*
+ * 登录注册页样式
+ */
+
+/*居中*/
+.login .container { 
+  text-align: center;
+  margin: 100px auto 10px;
+}
+.login .form-group>input,.login button {
+  width: 327px;
+  height: 54px;
+}
+/*忘记密码*/
+.forgotpwd {
+  color: #bbb;
+  text-decoration: underline;
+}
+/*没有账户？马上注册*/
+.tosignup {
+  padding-top: 10px;
+}
+.tosignup>a {
+  text-decoration: underline;
+  font-size: 1.1em;
+}
+/*紫色按钮*/
+.btn-purple {
+  color: #fff;
+  background-color: #561B8D;
+  border-color: #830089;
+}
+.btn-purple:hover {
+  color: #fff;
+  background-color: #7E19AA;
+   /*#561B99*/
+  border-color: #563d7c
+}
+/*错误提示*/
+.alert { 
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
